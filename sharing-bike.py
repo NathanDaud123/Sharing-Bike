@@ -1,9 +1,8 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-import plotly.graph_objects as go
 import seaborn as sns
 import pandas as pd
-go.layout.template.data = None
+
 day = pd.read_csv("C:/UB/MBKM/BANGKIT/Penalaksanaan/Belajar Analisis Data dengan Python/Proyek/day_clean.csv")
 hour = pd.read_csv("C:/UB/MBKM/BANGKIT/Penalaksanaan/Belajar Analisis Data dengan Python/Proyek/hour_clean.csv")
 day_numeric = day.select_dtypes(include=['number'])
